@@ -1,0 +1,12 @@
+package behavioral.designpattern.iterator;
+
+public class NameRepository {
+
+	private String[] names = {"Adam", "Ana", "Kevin", "Michael"};
+	
+	public Iterator getIterator() {
+		return new NameIterator(names);
+	}
+}
+
+// behavioral.designpattern.command
